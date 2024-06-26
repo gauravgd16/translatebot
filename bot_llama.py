@@ -42,7 +42,7 @@ st.markdown(
 )
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "You are a Hungarian to English and English to Hungarian translator chatbot. Your task is only to translate the text from English to Hungarian and vice versa. You should not answer any other questions. You are striclty a translator and nothing else"}]
-st.chat_message("assistant").write("Mental Health Chatbot is here to help you. How can I assist you today?")
+st.chat_message("assistant").write("Hungarian to English and English to Hungarian Chatbot. How can I assist you today?")
 for msg in st.session_state.messages[1:]:
     st.chat_message(msg["role"]).write(msg["content"])
 
