@@ -35,7 +35,13 @@ st.markdown(
     display: none;
     
     }
-    footer {visibility: hidden;}
+    // To break out of iframe and access the parent window
+const streamlitDoc = window.parent.document;
+
+// Make the replacement
+document.addEventListener("DOMContentLoaded", function(event){
+        streamlitDoc.getElementsByTagName("footer")[0].innerHTML = "Provided by G";
+    });
 
 </style>
 """,
