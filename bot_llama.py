@@ -35,15 +35,7 @@ st.markdown(
     display: none;
     
     }
-    window.onload = function() {
-            // Select the element with the specified classes
-            var element = document.querySelector('.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N');
-            // If the element is found, set its display style to 'none'
-            if (element) {
-                element.style.display = 'none';
-            }
-        };
-
+   
 </style>
 """,
     unsafe_allow_html=True,
