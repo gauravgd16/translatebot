@@ -35,10 +35,7 @@ st.markdown(
     display: none;
     
     }
-    div.viewerBadge_link__qRIco {
-    display: none;
-    
-    }
+    footer {visibility: hidden;}
 
 </style>
 """,
