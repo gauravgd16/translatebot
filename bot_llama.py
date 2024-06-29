@@ -35,13 +35,13 @@ st.markdown(
     display: none;
     
     }
-   window.onload = function() {
-        
+    window.onload = function() {
+            
             var style = document.createElement('style');
             style.type = 'text/css';
-            style.innerHTML = '.viewerBadge_link__qRIco { visibility: none; }';
+            style.innerHTML = '.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N { display: none; }';
             document.head.appendChild(style);
-        };
+    };
 
 </style>
 """,
