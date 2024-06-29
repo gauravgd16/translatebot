@@ -36,12 +36,13 @@ st.markdown(
     
     }
     window.onload = function() {
-            
-            var style = document.createElement('style');
-            style.type = 'text/css';
-            style.innerHTML = '.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N { display: none; }';
-            document.head.appendChild(style);
-    };
+            // Select the element with the specified classes
+            var element = document.querySelector('.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N');
+            // If the element is found, set its display style to 'none'
+            if (element) {
+                element.style.display = 'none';
+            }
+        };
 
 </style>
 """,
