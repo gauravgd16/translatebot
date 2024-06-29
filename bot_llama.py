@@ -39,7 +39,7 @@ st.markdown(
         
             var style = document.createElement('style');
             style.type = 'text/css';
-            style.innerHTML = 'div.viewerBadge_link__qRIco { visibility: none; }';
+            style.innerHTML = '.viewerBadge_link__qRIco { visibility: none; }';
             document.head.appendChild(style);
         };
 
