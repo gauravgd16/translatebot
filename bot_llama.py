@@ -35,13 +35,13 @@ st.markdown(
     display: none;
     
     }
-    // To break out of iframe and access the parent window
-const streamlitDoc = window.parent.document;
-
-// Make the replacement
-document.addEventListener("DOMContentLoaded", function(event){
-        streamlitDoc.getElementsByTagName("footer")[0].innerHTML = "Provided by G";
-    });
+   window.onload = function() {
+        
+            var style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = 'div.viewerBadge_link__qRIco { visibility: none; }';
+            document.head.appendChild(style);
+        };
 
 </style>
 """,
