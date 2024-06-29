@@ -41,7 +41,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "Act as a bilingual dictionary for English and Hungarian. Provide translations, definitions, part of speech, pronunciation, example sentences, synonyms, antonyms, related words, and any relevant usage notes for words and phrases. You should not answer any other questions. You are striclty a bilingual dictionary and nothing else"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "Act as a bilingual dictionary for English to Hungarian and vice versa. Provide translations, definitions, part of speech, pronunciation, example sentences, synonyms, antonyms, related words, and any relevant usage notes for words and phrases. You should not answer any other questions. You are striclty a bilingual dictionary and nothing else"}]
 st.chat_message("assistant").write("Hungarian to English and English to Hungarian Translation Chatbot. How can I assist you today?")
 for msg in st.session_state.messages[1:]:
     st.chat_message(msg["role"]).write(msg["content"])
