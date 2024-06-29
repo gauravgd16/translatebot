@@ -35,6 +35,10 @@ st.markdown(
     display: none;
     
     }
+    div.viewerBadge_link__qRIco {
+    display: none;
+    
+    }
 
 </style>
 """,
